@@ -27,6 +27,8 @@ $(document).ready(function () {  //문서준비이벤트
       
 
     $('.contents2').hide();
+    $('.contents3').hide();
+    $('.contents4').hide();
 
     $('.tab1').click(function(){
         $('.contents1').show();

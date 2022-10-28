@@ -1,137 +1,118 @@
 @charset "utf-8";
 
-body {
-    font-family: 'ghanachoco', 'Daehan-Bold', 'GmarketSansMedium', 'LeferiPoint-WhiteObliqueA', 'Noto Sans KR', sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    color: black;
-}
 
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.inner {
-    max-width: calc(100% - 200px);
-    margin: 0 auto;
-}
-
-.inner_100 {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-#wrap {
-    overflow-x: hidden;
-}
-
-@media (max-width:1600px) {
+/* @media (max-width:1600px) {
     .inner {
         max-width: calc(100% - 160px);
         margin: 0 auto;
     }
 }
+ */
 
-@media (max-width:1400px) {
-    .inner {
-        max-width: calc(100% - 140px);
-        margin: 0 auto;
-    }
-}
-
-@media (max-width:1200px) {
-    .inner {
-        max-width: calc(100% - 120px);
-        margin: 0 auto;
-    }
-}
-
-@media (max-width:1024px) {
-    .inner {
-        max-width: calc(100% - 100px);
-        margin: 0 auto;
-    }
-}
 
 @media (max-width:768px) {
     .inner {
         max-width: calc(100% - 40px);
         margin: 0 auto;
     }
-}
-
-#header {
-    background: #90C740;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 99;
-}
-
-#header .header_group {
-    display: flex;
-    justify-content: space-between;
-}
-
-#header .inner .ham {
-    margin-top: 15px;
-}
-
-#header h1 img {
-    margin-top: 15px;
-}
 
 
+    #creative .container {
+        width: 100%;
+        height: 1000px;
+    }
 
-/* 모바일메뉴 */
-#header .ham {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    font-size: 0;
-}
+    #creative .container img {
+        width: 100%;
+    }
 
-#header .mgnb_wrap {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
 
-#header .mgnb {
-    padding: 150px 50px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 70%;
-    height: 100%;
-    background: #90C740;
-}
+    #creative ul.tabs li {
+        background: none;
+        color: #000;
+        width: 23%;
+        display: inline-block;
+        padding: 20px 0;
+        cursor: pointer;
+        border: 1px solid #fff;
 
-#header .mgnb ul li {
-    border-bottom: 1px solid #fff;
-    padding: 20px 0;
-    font-size: 40px;
-}
+    }
 
-#header .mgnb ul li a {
-    color: #fff;
-}
+    #creative .con_box {
+        width: 90%;
+    }
 
-#header .mgnb .mgnb_close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 80px;
-    padding: 10px 0;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
+    #creative .contents1 li {
+        background: #fff;
+        padding: 16px 5px 5px;
+        border-radius: 40px;
+        width: calc((100% - 30px)/2);
+        margin: 30px 0 30px;
+        font-family: 'Daehan-Bold';
+    }
+
+    #creative .contents1 li h2 {
+        font-size: 18px;
+    }
+
+    #creative .contents1 li p {
+        font-size: 11.5px;
+        letter-spacing: -1px;
+    }
+
+    #creative .contents2 li {
+        background: #fff;
+        padding: 16px 5px 5px;
+        border-radius: 40px;
+        width: calc((100% - 30px)/2);
+        margin: 30px 0 30px;
+        font-family: 'Daehan-Bold';
+    }
+
+    #creative .contents2 li h2 {
+        font-size: 18px;
+    }
+
+    #creative .contents2 li p {
+        font-size: 11.5px;
+        letter-spacing: -1px;
+    }
+
+    #creative .contents3 li {
+        background: #fff;
+        padding: 16px 5px 5px;
+        border-radius: 40px;
+        width: calc((100% - 30px)/2);
+        margin: 50px 0 50px;
+        font-family: 'Daehan-Bold';
+    }
+
+    #creative .contents3 li h2 {
+        font-size: 18px;
+    }
+
+    #creative .contents3 li p {
+        font-size: 11.5px;
+        letter-spacing: -1px;
+    }
+
+    #creative .contents4 li {
+        background: #fff;
+        padding: 16px 5px 5px;
+        border-radius: 40px;
+        width: calc((100% - 30px)/2);
+        margin: 50px 0 50px;
+        font-family: 'Daehan-Bold';
+    }
+
+    #creative .contents4 li h2 {
+        font-size: 18px;
+    }
+
+    #creative .contents4 li p {
+        font-size: 11.5px;
+        letter-spacing: -1px;
+    }
 }
 
 
@@ -151,26 +132,26 @@ body {
     color: #fff;
 }
 
-#about_img .popupbook_img {
-    padding-top: 100px;
-}
+
 
 
 
 /* 탭메뉴 */
 .container {
     width: 1200px;
+    height: 1800px;
     margin: 0 auto;
     text-align: center;
-    height: 1900px;
+
+
 }
 
 ul.tabs {
     font-family: 'Daehan-Bold';
-    display: flex;
     cursor: pointer;
     padding: 20px 0 20px;
-    transform: translateX(24%);
+
+
 }
 
 
@@ -182,6 +163,7 @@ ul.tabs li {
     cursor: pointer;
     border: 1px solid #fff;
 
+
 }
 
 .con_box {
@@ -189,7 +171,10 @@ ul.tabs li {
     position: relative;
     width: 1000px;
     background: none;
+
+
 }
+
 /* contents1 */
 .contents1 {
     margin: 0;

@@ -1,31 +1,5 @@
 @charset "utf-8";
 
-body {
-    font-family: 'ghanachoco', 'Daehan-Bold', 'GmarketSansMedium', 'LeferiPoint-WhiteObliqueA', 'Noto Sans KR', sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    color: black;
-}
-
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.inner {
-    max-width: calc(100% - 200px);
-    margin: 0 auto;
-}
-
-.inner_100 {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-#wrap {
-    overflow-x: hidden;
-}
 
 @media (max-width:1600px) {
     .inner {
@@ -34,104 +8,41 @@ body {
     }
 }
 
-@media (max-width:1400px) {
-    .inner {
-        max-width: calc(100% - 140px);
-        margin: 0 auto;
-    }
-}
-
-@media (max-width:1200px) {
-    .inner {
-        max-width: calc(100% - 120px);
-        margin: 0 auto;
-    }
-}
-
-@media (max-width:1024px) {
-    .inner {
-        max-width: calc(100% - 100px);
-        margin: 0 auto;
-    }
-}
-
 @media (max-width:768px) {
     .inner {
-        max-width: calc(100% - 40px);
+        max-width: calc(100% - 80px);
         margin: 0 auto;
     }
-}
-
-#header {
-    background: #90C740;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 99;
-}
-
-#header .header_group {
-    display: flex;
-    justify-content: space-between;
-}
-
-#header .inner .ham {
-    margin-top: 15px;
-}
-
-#header h1 img {
-    margin-top: 15px;
-}
 
 
 
-/* 모바일메뉴 */
-#header .ham {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    font-size: 0;
-}
+    #book .container {width:100%;}
+    #book .container img {width:100%;}
 
-#header .mgnb_wrap {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
+    #book ul.tabs li {
+        background: none;
+        color: #000;
+        width:45%;
+        padding: 20px 0;
+        display:inline-block;
+        cursor: pointer;
+        border: 1px solid #fff;
+        font-size: 13px;
+    }
 
-#header .mgnb {
-    padding: 150px 50px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 70%;
-    height: 100%;
-    background: #90C740;
-}
 
-#header .mgnb ul li {
-    border-bottom: 1px solid #fff;
-    padding: 20px 0;
-    font-size: 40px;
-}
+    #book .con_box {width:90%;}
+    
+    #book .con_box .contents1 .txt1 {font-size: 30px;} 
+    #book .con_box .contents1 .txt2 {font-size: 15px; padding: 20px 50px 0 50px;}
+    #book .con_box .contents1 .txt3 {font-size: 15px; padding: 20px 50px 0 50px;}
+    #book .con_box .contents1 .txt4 {font-size: 15px; padding: 20px 50px 50px 50px;}
 
-#header .mgnb ul li a {
-    color: #fff;
-}
+    
+    #book .con_box .contents2 .txt3 {font-size: 29px;} 
+    #book .con_box .contents2 .txt4 {font-size: 15px; padding: 20px 50px 0 50px;}
 
-#header .mgnb .mgnb_close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 80px;
-    padding: 10px 0;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
+
 }
 
 
@@ -151,9 +62,7 @@ body {
     color: #fff;
 }
 
-#about_img .popupbook_img {
-    padding-top: 100px;
-}
+
 
 
 
@@ -166,18 +75,17 @@ body {
 
 ul.tabs {
     font-family: 'Daehan-Bold';
-    display: flex;
+    
     cursor: pointer;
-padding: 20px 0 20px;
-transform: translateX(29.3%);
+    padding: 20px 0 20px;
 }
 
 
 ul.tabs li {
     background: none;
     color: #000;
-    display: inline-block;
     padding: 20px 38px;
+    display:inline-block;
     cursor: pointer;
     border: 1px solid #fff;
 }
@@ -218,28 +126,32 @@ ul.tabs li {
 }
 
 
-.con_box img {padding: 5px 0 20px;}
+.con_box img {
+    padding: 5px 0 20px;
+}
 
 .con_box p.txt1 {
-    font-family:'Daehan-Bold';
+    font-family: 'Daehan-Bold';
     font-size: 25px;
     padding-top: 20px;
 }
 
-.con_box p {font-weight: 700;
+.con_box p {
+    font-weight: 700;
     font-family: 'LeferiPoint-WhiteObliqueA';
     padding-top: 30px;
 }
 
 .con_box p.txt3 {
-    font-family:'Daehan-Bold';
+    font-family: 'Daehan-Bold';
     font-size: 25px;
     padding-top: 20px;
     color: #fff;
 }
 
-.con_box p.txt4 {font-weight: 550;
+.con_box p.txt4 {
+    font-weight: 550;
     font-family: 'LeferiPoint-WhiteObliqueA';
     padding-top: 30px;
-color: #fff;
+    color: #fff;
 }
